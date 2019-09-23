@@ -1,0 +1,78 @@
+body {
+	margin: 0;
+	width:100%;
+	display: flex;
+	height:100%;
+}
+
+.wide-col {
+	width: 60%;
+	height:100%;
+}
+
+.narrow-col {
+	display:block;
+	width: 40%;
+	height: calc(100%/3);
+}
+
+.box {
+	height:100%;
+	width:100%;
+}
+
+.blue {content:url(https://techcrunch.com/wp-content/uploads/2015/08/safe_image.gif);}
+.red {content:url(https://ewscripps.brightspotcdn.com/dims4/default/0450670/2147483647/strip/true/crop/354x236+123+0/resize/300x200!/quality/90/?url=https%3A%2F%2Fewscripps.brightspotcdn.com%2Fc8%2F46%2F0ad2ade74abe9440e28ec69aa4ef%2Ftumblr-oqts02pfva1wn1p99o2-1280.gif);}
+.yellow {content:url(https://images2.minutemediacdn.com/image/upload/c_crop,h_1126,w_2000,x_0,y_3/f_auto,q_auto,w_1100/v1554930590/shape/mentalfloss/536158-nbc.jpg);}
+.photo {
+	max-height: 100%;
+	max-width: 100%;
+	margin-left: 15%;
+	margin-top: 15%;
+	content:url(https://cdn.thesolesupplier.co.uk/2018/10/Pharrell-x-adidas-Hu-NMD-Inspiration-Pack-Black-EE7582.png);
+}
+
+/* https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
+/* If you're using 'display: flex' this class can be used to easily center horizontally! */
+.center-horizontal {
+	align-items: center;
+	background-color: #0D11A8;
+}
+
+
+/* If you're using 'display: flex' this class can be used to easily center vertically! */
+.center-vertical {
+	justify-content: center;
+}
+
+/* Keep your image from overflowing it's parent DIV */
+.contain-image {
+	
+}
+
+@media only screen and (max-width: 1000px) {
+	body{
+		display: block;
+	}
+	.narrow-col {
+		display:flex;
+		width: calc(100%/3);
+		height: 40%;
+	}
+	.wide-col {
+		width: 100%;
+		height:60%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.narrow-col {
+		display:block;
+		width: 100%;
+		height: calc(100%/3);
+	}
+}	
+
+	
+	
+	
